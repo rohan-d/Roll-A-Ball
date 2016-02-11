@@ -4,6 +4,7 @@ using System.Collections;
 public class Teleporter1 : MonoBehaviour {
 
     public GameObject Receiver;
+    public Rigidbody rb;
     public Camera Main;
 
     void Awake() {
@@ -18,7 +19,7 @@ public class Teleporter1 : MonoBehaviour {
             //Main.transform.position = new Vector3 (10, 4, 0);
             //Main.transform.Rotate(20, -90, 0);
             other.transform.position = destination;
-
+            rb.velocity = Vector3.zero;
         }
     }
 }
