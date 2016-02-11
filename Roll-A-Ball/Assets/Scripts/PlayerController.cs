@@ -39,12 +39,12 @@ public class PlayerController : MonoBehaviour {
 
     void Jump() {
         if (!grounded && dblJump == true && Input.GetKeyDown("space")) {
-            rb.velocity = new Vector3(0, 20, 0);
+            rb.velocity = new Vector3(0, 10, 0);
             dblJump = false;
             print("dbljumped");
         }
         else if (grounded == true && Input.GetKeyDown("space")) {
-            rb.velocity = new Vector3(0, 10, 0);
+            rb.velocity = new Vector3(0, 5, 0);
             grounded = false;
             print("grounded!");
         }
