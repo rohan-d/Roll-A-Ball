@@ -4,23 +4,27 @@ GameDev WS15/16_Project
 
 This is an experimental 3D platformer.
 
-<<<Already Implemented>>>
-Base: Roll-A-Ball
-Player particles and trail
-Projectiles with particle system
-Shooting Projectiles with "e"
-Fall Death
-Teleportation points
-Jump and double Jump with restrictions
-Lerping Pick Ups
-Pretty simple textures and skybox
+<br>
+<b>Already Implemented_</b>
 
-<<<Features still waiting to be implemented>>>
-Music and Sound
-Moving Platforms
-NPC Dialogue triggered by collision
-Awesome Hooking ability
-Boss puzzle stage
+Base: Roll-A-Ball <br>
+Player particles and trail <br>
+Projectiles with particle system <br>
+Shooting Projectiles with "e" <br>
+Fall Death <br> 
+Teleportation points <br>
+Jump and double Jump with restrictions <br>
+Lerping Pick Ups <br>
+Pretty simple textures and skybox <br>
+
+<br>
+<b>Features still waiting to be implemented_</b>
+
+Music and Sound <br>
+Moving Platforms <br>
+NPC Dialogue triggered by collision <br>
+Awesome Hooking ability <br>
+Boss puzzle stage <br>
 
 
 by Rohan D.
