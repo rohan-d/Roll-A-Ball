@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 
     public float speed;
     public Text countText, winText;
+    public int totalPUs;
 
     private Rigidbody rb;
     private bool dblJump = true, grounded = true;
@@ -41,25 +42,22 @@ public class PlayerController : MonoBehaviour {
         if (!grounded && dblJump == true && Input.GetKeyDown("space")) {
             rb.velocity = new Vector3(0, 10, 0);
             dblJump = false;
-            print("dbljumped");
         }
         else if (grounded == true && Input.GetKeyDown("space")) {
-            rb.velocity = new Vector3(0, 5, 0);
+            rb.velocity = new Vector3(0, 7, 0);
             grounded = false;
-            print("grounded!");
         }
     }
 
     void SetCountText() {
-        countText.text = "Count; " + count.ToString();
-        if(count >= 3) {
-            winText.text = "You Win!";
+        countText.text = totalPUs + " / " + count.ToString();
+        if(count >= totalPUs) {
+            winText.text = "You Won!";
         }
     }
 
     void OnCollisionEnter(Collision hit) {
         grounded = true;
         dblJump = true;
-        print("collided");
     }
 }
